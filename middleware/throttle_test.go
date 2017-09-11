@@ -9,7 +9,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/go-chi/chi"
+	"github.com/Projectplace/chi"
 )
 
 var testContent = []byte("Hello world!")

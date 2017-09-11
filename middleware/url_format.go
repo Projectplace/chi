@@ -5,7 +5,7 @@ import (
 	"net/http"
 	"strings"
 
-	"github.com/go-chi/chi"
+	"github.com/Projectplace/chi"
 )
 
 var (

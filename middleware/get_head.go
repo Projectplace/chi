@@ -3,7 +3,7 @@ package middleware
 import (
 	"net/http"
 
-	"github.com/go-chi/chi"
+	"github.com/Projectplace/chi"
 )
 
 func GetHead(next http.Handler) http.Handler {

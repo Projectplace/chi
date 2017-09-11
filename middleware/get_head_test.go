@@ -5,7 +5,7 @@ import (
 	"net/http/httptest"
 	"testing"
 
-	"github.com/go-chi/chi"
+	"github.com/Projectplace/chi"
 )
 
 func TestGetHead(t *testing.T) {
