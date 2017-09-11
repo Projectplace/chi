@@ -20,30 +20,57 @@ const (
 	mGET
 	mHEAD
 	mLINK
+	mLOCK
+	mMKCOL
+	mMOVE
 	mOPTIONS
 	mPATCH
 	mPOST
+	mPROPFIND
+	mPROPPATCH
 	mPUT
 	mTRACE
 	mUNLINK
+	mUNLOCK
 	mSTUB
 
-	mALL methodTyp = mCONNECT | mDELETE | mGET | mHEAD | mLINK |
-		mOPTIONS | mPATCH | mPOST | mPUT | mTRACE | mUNLINK
+	mALL methodTyp = mCONNECT |
+		mDELETE |
+		mGET |
+		mHEAD |
+		mLINK |
+		mLOCK |
+		mMKCOL |
+		mMOVE |
+		mOPTIONS |
+		mPATCH |
+		mPOST |
+		mPROPFIND |
+		mPROPPATCH |
+		mPUT |
+		mTRACE |
+		mUNLINK |
+		mUNLOCK
 )
 
 var methodMap = map[string]methodTyp{
-	"CONNECT": mCONNECT,
-	"DELETE":  mDELETE,
-	"GET":     mGET,
-	"HEAD":    mHEAD,
-	"LINK":    mLINK,
-	"OPTIONS": mOPTIONS,
-	"PATCH":   mPATCH,
-	"POST":    mPOST,
-	"PUT":     mPUT,
-	"TRACE":   mTRACE,
-	"UNLINK":  mUNLINK,
+	"CONNECT":   mCONNECT,
+	"DELETE":    mDELETE,
+	"GET":       mGET,
+	"HEAD":      mHEAD,
+	"LINK":      mLINK,
+	"LOCK":      mLOCK,
+	"MKCOL":     mMKCOL,
+	"MOVE":      mMOVE,
+	"OPTIONS":   mOPTIONS,
+	"PATCH":     mPATCH,
+	"POST":      mPOST,
+	"PROPFIND":  mPROPFIND,
+	"PROPPATCH": mPROPPATCH,
+	"PUT":       mPUT,
+	"TRACE":     mTRACE,
+	"UNLINK":    mUNLINK,
+	"UNLOCK":    mUNLOCK,
 }
 
 type nodeTyp uint8
